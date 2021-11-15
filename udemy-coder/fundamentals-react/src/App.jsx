@@ -1,4 +1,4 @@
-import "./App.css"
+import "./App.css";
 import React from "react";
 
 import First from "./components/basics/First";
@@ -13,15 +13,15 @@ export default () => {
             <h1>Fundamentals React</h1>
 
             <div className="Cards">
-                <Card title="#04 - Random Exercise">
+                <Card title="#04 - Random Exercise" color="#FA6900">
                     <RandomNumber min={1} max={60} />
                 </Card>
 
-                <Card title="#03 - Fragment">
+                <Card title="#03 - Fragment" color="#E94C6F">
                     <Fragment />
                 </Card>
 
-                <Card title="#02 - With Param">
+                <Card title="#02 - With Param" color="#E8B71A">
                     <WithParam
                         titulo="Segundo Component"
                         aluno="Pedro"
@@ -29,7 +29,7 @@ export default () => {
                     />
                 </Card>
 
-                <Card title="#01 - First Component">
+                <Card title="#01 - First Component" color="#588C73">
                     <First></First>
                 </Card>
             </div>
