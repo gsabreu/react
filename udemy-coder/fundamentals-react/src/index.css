@@ -1,7 +1,8 @@
 body {
-    font-family: Oswald;
     background-color: #222;
     color: #fff;
+    font-family: Oswald;
+    font-size: 1.4rem;
     text-align: center;
 }
 
