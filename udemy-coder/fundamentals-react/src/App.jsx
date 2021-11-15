@@ -6,6 +6,7 @@ import WithParam from "./components/basics/WithParam";
 import Fragment from "./components/basics/Fragment";
 import RandomNumber from "./components/basics/RandomNumber";
 import Card from "./components/layout/Card";
+import Family from "./components/basics/Family";
 
 export default () => {
     return (
@@ -13,6 +14,11 @@ export default () => {
             <h1>Fundamentals React</h1>
 
             <div className="Cards">
+
+                <Card title="#05 - Componets with Children" color="#00C8F8">
+                    <Family surname="Ferreira"></Family>
+                </Card>
+
                 <Card title="#04 - Random Exercise" color="#FA6900">
                     <RandomNumber min={1} max={60} />
                 </Card>
