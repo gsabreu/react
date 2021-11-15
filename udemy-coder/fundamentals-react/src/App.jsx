@@ -7,6 +7,7 @@ import Fragment from "./components/basics/Fragment";
 import RandomNumber from "./components/basics/RandomNumber";
 import Card from "./components/layout/Card";
 import Family from "./components/basics/Family";
+import FamilyMember from "./components/basics/FamilyMember";
 
 export default () => {
     return (
@@ -16,7 +17,11 @@ export default () => {
             <div className="Cards">
 
                 <Card title="#05 - Componets with Children" color="#00C8F8">
-                    <Family surname="Ferreira"></Family>
+                    <Family surname= "Silva">
+                        <FamilyMember name="Pedro" />
+                        <FamilyMember name="Ana" />
+                        <FamilyMember name="Gustavo" />
+                    </Family>
                 </Card>
 
                 <Card title="#04 - Random Exercise" color="#FA6900">
