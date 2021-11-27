@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
 
+import ProductsTable from "./components/loop/ProductsTable";
+import StudentList from "./components/loop/StudentList";
 import First from "./components/basics/First";
 import WithParam from "./components/basics/WithParam";
 import Fragment from "./components/basics/Fragment";
@@ -15,6 +17,14 @@ export default () => {
             <h1>Fundamentals React</h1>
 
             <div className="Cards">
+
+                <Card title="#07- Loop Challenge" color="#3A9AD9">
+                    <ProductsTable></ProductsTable>
+                </Card>
+
+                <Card title="#06 - Loop" color="#FF4C65">
+                    <StudentList></StudentList>
+                </Card>
 
                 <Card title="#05 - Componets with Children" color="#00C8F8">
                     <Family surname= "Silva">

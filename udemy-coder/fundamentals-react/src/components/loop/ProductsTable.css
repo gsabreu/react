@@ -1,0 +1,12 @@
+.ProductsTable table {
+    width: 100%;
+}
+
+.ProductsTable th {
+    background-color: #283cae;
+    color: #fff;
+}
+
+.ProductsTable .Even {
+    background-color: #ddd;
+}
