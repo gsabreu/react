@@ -1,6 +1,8 @@
 import "./App.css";
 import React from "react";
 
+import UserInfo from "./components/conditional/UserInfo";
+import EvenOrOdd from "./components/conditional/EvenOrOdd";
 import ProductsTable from "./components/loop/ProductsTable";
 import StudentList from "./components/loop/StudentList";
 import First from "./components/basics/First";
@@ -17,6 +19,12 @@ export default () => {
             <h1>Fundamentals React</h1>
 
             <div className="Cards">
+
+                <Card title="#08- Conditional Render" color="#982395">
+                    <EvenOrOdd number={20}></EvenOrOdd>
+                    <UserInfo user={{ name: "Guilherme" }}></UserInfo>
+                    <UserInfo user={{ email: "Guilherme@" }}></UserInfo>
+                </Card>
 
                 <Card title="#07- Loop Challenge" color="#3A9AD9">
                     <ProductsTable></ProductsTable>
