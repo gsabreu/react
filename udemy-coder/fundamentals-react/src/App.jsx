@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import MainDirect from "./communication/MainDirect";
 import UserInfo from "./components/conditional/UserInfo";
 import EvenOrOdd from "./components/conditional/EvenOrOdd";
 import ProductsTable from "./components/loop/ProductsTable";
@@ -19,6 +20,10 @@ export default () => {
             <h1>Fundamentals React</h1>
 
             <div className="Cards">
+
+                <Card title="#09- Direct Communication" color="#59323C">
+                    <MainDirect></MainDirect>
+                </Card>
 
                 <Card title="#08- Conditional Render" color="#982395">
                     <EvenOrOdd number={20}></EvenOrOdd>
