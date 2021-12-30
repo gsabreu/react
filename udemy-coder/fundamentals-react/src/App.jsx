@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import Input from "./components/forms/Input";
 import MainIndirect from "./communication/MainIndirect";
 import MainDirect from "./communication/MainDirect";
 import UserInfo from "./components/conditional/UserInfo";
@@ -21,6 +22,10 @@ export default () => {
             <h1>Fundamentals React</h1>
 
             <div className="Cards">
+
+                <Card title="#11- Controled component (Input)" color="#E45F56">
+                    <Input></Input>
+                </Card>
 
                 <Card title="#10- Indirect Communication" color="#8BAD39">
                     <MainIndirect></MainIndirect>
