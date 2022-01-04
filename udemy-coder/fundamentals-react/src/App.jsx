@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import Counter from "./components/counter/Counter";
 import Input from "./components/forms/Input";
 import MainIndirect from "./communication/MainIndirect";
 import MainDirect from "./communication/MainDirect";
@@ -22,6 +23,10 @@ export default () => {
             <h1>Fundamentals React</h1>
 
             <div className="Cards">
+
+                <Card title="#12- Counter" color="#424242">
+                    <Counter initialNumber={100}></Counter>
+                </Card>
 
                 <Card title="#11- Controled component (Input)" color="#E45F56">
                     <Input></Input>
