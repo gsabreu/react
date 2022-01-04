@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 
+import Lotto from "./components/lotto/Lotto";
 import Counter from "./components/counter/Counter";
 import Input from "./components/forms/Input";
 import MainIndirect from "./communication/MainIndirect";
@@ -23,6 +24,9 @@ export default () => {
             <h1>Fundamentals React</h1>
 
             <div className="Cards">
+                <Card title="#13 - Lotto" color="#B9006E">
+                    <Lotto numbersLenght={6}></Lotto>
+                </Card>
 
                 <Card title="#12- Counter" color="#424242">
                     <Counter initialNumber={100}></Counter>
@@ -55,7 +59,7 @@ export default () => {
                 </Card>
 
                 <Card title="#05 - Componets with Children" color="#00C8F8">
-                    <Family surname= "Silva">
+                    <Family surname="Silva">
                         <FamilyMember name="Pedro" />
                         <FamilyMember name="Ana" />
                         <FamilyMember name="Gustavo" />
