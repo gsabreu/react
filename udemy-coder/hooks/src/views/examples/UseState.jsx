@@ -10,7 +10,7 @@ const UseState = (props) => {
         <div className="UseState">
             <PageTitle
                 title="Hook UseState"
-                subtitle="Estado em componentes funcionais!"
+                subtitle="State in functional components!"
             />
             <SectionTitle title="Exercice #01" />
             <div className="center">
