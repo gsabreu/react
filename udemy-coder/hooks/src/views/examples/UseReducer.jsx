@@ -1,26 +1,12 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import PageTitle from "../../components/layout/PageTitle";
 
-const initialState = {
-    cart: [],
-    products: [],
-    user: null,
-    number: 0,
-};
+import { initialState, reducer } from '../../store'
 
-function reducer(state, action) {
-    switch (action.type) {
-        case "number_add2":
-            return { ...state, number: state.number + 2 };
-        case 'login':
-            return { ...state, user: { name: action.payload } }
-        default:
-            return state;
-    }
-}
 
 const UseReducer = (props) => {
-    const [state, dispatch] = useReducer(reducer, initialState)
+    const [state, dispatch] = useReducer(reducer, initialState);
+    const [number, setNumber] = useState(0);
     return (
         <div className="UseReducer">
             <PageTitle
@@ -29,14 +15,55 @@ const UseReducer = (props) => {
             />
 
             <div className="center">
-                { state.user ? 
+                {state.user ? (
                     <span className="text">{state.user.name}</span>
-                    : <span className="text"> No user</span>   
-                }
+                ) : (
+                    <span className="text"> No user</span>
+                )}
                 <span className="text">{state.number}</span>
                 <div>
-                    <button className="btn" onClick={() => dispatch({type: 'login', payload: 'Maria'})}>Login</button>
-                    <button className="btn" onClick={() => dispatch({type: 'number_add2'})}>+2</button>
+                    <button
+                        className="btn"
+                        onClick={() =>
+                            dispatch({ type: "login", payload: "Maria" })
+                        }
+                    >
+                        Login
+                    </button>
+                    <button
+                        className="btn"
+                        onClick={() => dispatch({ type: "number_add2" })}
+                    >
+                        +2
+                    </button>
+                    <button
+                        className="btn"
+                        onClick={() => dispatch({ type: "number_mutiply7" })}
+                    >
+                        * 7
+                    </button>
+                    <button
+                        className="btn"
+                        onClick={() => dispatch({ type: "number_divide25" })}
+                    >
+                        / 25
+                    </button>
+                    <button
+                        className="btn"
+                        onClick={() => dispatch({ type: "number_parse" })}
+                    >
+                        Parse to Integer
+                    </button>
+                </div>
+
+                <div>
+                    <input
+                        type="number"
+                        className="text"
+                        value={number}
+                        onChange={(e) => setNumber(e.target.value)}
+                    />
+                    <button className="btn" onClick={() => dispatch({ type: "number_addN", payload: number })}>Insert Number</button>
                 </div>
             </div>
         </div>
