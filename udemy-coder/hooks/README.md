@@ -9,3 +9,5 @@ Hooks are functions that let you “hook into” React state and lifecycle featu
 * Will likely reduce your bundle size because code using Hooks tends to minify better than equivalent code using classes
 * No breaking changes
 
+
+### You can find each example in the `src/views/examples/`
